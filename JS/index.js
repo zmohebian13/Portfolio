@@ -1,6 +1,6 @@
 const typedDesc = document.querySelector(".hero-desc-typed");
 
-let text = "I'm Front End Developer";
+let text = "Front End Developer";
 let index = 0;
 
 const typeWriter = () => {

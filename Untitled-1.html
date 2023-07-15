@@ -14,13 +14,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-     <!-- WOW js-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- iHover -->
+    <link href="CSS/ihover.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./CSS/styles.css" />
 
     <title>Portfolio</title>
   </head>
@@ -108,17 +108,23 @@
     <!-- End Header -->
 
     <!-- Start hero  -->
-    <section class="hero" id="hero">
-      <div class="hero-container">
+    <div id="particles-js" class="hero">
+      <div
+        class="hero-container"
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+      >
         <h1 class="hero-title">زهره محبیان عراقی</h1>
         <p class="hero-desc">
+          I'm
           <span
             class="hero-desc-typed"
             data-typed-items="Front End Developer"
           ></span>
         </p>
       </div>
-    </section>
+    </div>
+
     <!-- End hero  -->
 
     <main class="main">
@@ -140,14 +146,22 @@
               </div>
 
               <div class="row">
-                <div class="col-lg-4 wow animate__animated animate__fadeInRight">
+                <div
+                  class="col-lg-4"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
                   <img
                     src="./img/family1.jpg"
                     alt=""
                     class="about-img img-fluid"
                   />
                 </div>
-                <div class="col-lg-8 pt-4 pt-lg-0 content wow animate__animated animate__fadeInLeft">
+                <div
+                  class="col-lg-8 pt-4 pt-lg-0 content"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                >
                   <h3 class="about-detail-title">برنامه نویس فرانت اند</h3>
                   <p class="about-detail-desc">
                     علاقه ی من به برنامه نویسی از یک درس 4 واحدی در دانشگاه شروع
@@ -229,7 +243,11 @@
                 </p>
               </div>
               <div class="row facts-details">
-                <div class="col-lg-3 col-md-6 fact-item wow animate__animated animate__fadeInUp">
+                <div
+                  class="col-lg-3 col-md-6 fact-item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <i class="bi bi-emoji-smile-fill"></i>
                   <div class="fact-item-count">
                     <strong class="fact-item-num">232</strong>
@@ -239,7 +257,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 fact-item wow animate__animated animate__fadeInUp">
+                <div
+                  class="col-lg-3 col-md-6 fact-item"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <i class="bi bi-journal-richtext"></i>
                   <div class="fact-item-count">
                     <strong class="fact-item-num">521</strong>
@@ -249,7 +271,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 fact-item wow animate__animated animate__fadeInUp">
+                <div
+                  class="col-lg-3 col-md-6 fact-item"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   <i class="bi bi-headset"></i>
                   <div class="fact-item-count">
                     <strong class="fact-item-num">1453</strong>
@@ -259,7 +285,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 fact-item wow animate__animated animate__fadeInUp">
+                <div
+                  class="col-lg-3 col-md-6 fact-item"
+                  data-aos="fade-up"
+                  data-aos-duration="2500"
+                >
                   <i class="bi bi-people-fill"></i>
                   <div class="fact-item-count">
                     <strong class="fact-item-num">32</strong>
@@ -286,7 +316,11 @@
             </div>
             <div class="row skill-menu">
               <div class="col-lg-6">
-                <div class="skill-item wow animate__animated animate__fadeInRight">
+                <div
+                  class="skill-item"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <div class="skill-item-title">
                     <span class="skill-value">100%</span>
                     <span class="skill-title">HTML</span>
@@ -301,7 +335,11 @@
                     ></div>
                   </div>
                 </div>
-                <div class="skill-item wow animate__animated animate__fadeInRight">
+                <div
+                  class="skill-item"
+                  data-aos="fade-left"
+                  data-aos-duration="1500"
+                >
                   <div class="skill-item-title">
                     <span class="skill-value">90%</span>
                     <span class="skill-title">CSS</span>
@@ -316,7 +354,11 @@
                     ></div>
                   </div>
                 </div>
-                <div class="skill-item wow animate__animated animate__fadeInRight">
+                <div
+                  class="skill-item"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
                   <div class="skill-item-title">
                     <span class="skill-value">75%</span>
                     <span class="skill-title">JAVASCRIPT75</span>
@@ -332,8 +374,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="skill-item wow animate__animated animate__fadeInLeft">
+              <div class="col-lg-6" data-aos="fade-right">
+                <div
+                  class="skill-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
                   <div class="skill-item-title">
                     <span class="skill-value">50%</span>
                     <span class="skill-title">PHOTOSHOP</span>
@@ -348,7 +394,11 @@
                     ></div>
                   </div>
                 </div>
-                <div class="skill-item wow animate__animated animate__fadeInLeft">
+                <div
+                  class="skill-item"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                >
                   <div class="skill-item-title">
                     <span class="skill-value">75%</span>
                     <span class="skill-title">BOOTSTRAP</span>
@@ -363,7 +413,11 @@
                     ></div>
                   </div>
                 </div>
-                <div class="skill-item wow animate__animated animate__fadeInLeft">
+                <div
+                  class="skill-item"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                >
                   <div class="skill-item-title">
                     <span class="skill-value">40%</span>
                     <span class="skill-title">MATERIAL UI</span>
@@ -400,7 +454,7 @@
             </div>
           </div>
           <div class="row resume-menu">
-            <div class="col-lg-6 wow animate__animated animate__fadeInUp">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
               <h3 class="resume-item-title">Sumary</h3>
               <div class="resume-item">
                 <h4 class="resume-item-name">دانشگاه اراک</h4>
@@ -448,7 +502,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-6 wow animate__animated animate__fadeInUp">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
               <h3 class="resume-item-title">Professional Experience</h3>
               <div class="resume-item pb-2">
                 <h4 class="resume-item-name">
@@ -520,7 +574,11 @@
               Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p>
           </div>
-          <div class="row portfolio-header wow animate__animated animate__fadeInUp">
+          <div
+            class="row portfolio-header"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="col-lg-12 portfolio-header-title">
               <ul class="portfolio-header-menu">
                 <li class="portfolio-header-item">app</li>
@@ -530,154 +588,135 @@
               </ul>
             </div>
           </div>
-          <div class="row portfolio-content wow animate__animated animate__fadeInUp">
+          <div
+            class="row portfolio-content"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img src="/img/portfolio/portfolio-1.jpg" class="img-fluid" />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-1.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-2.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-2.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-3.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-3.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-4.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-4.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-5.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-5.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-6.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-6.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-7.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-7.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-8.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-8.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item">
-              <div class="portfolio-single-image">
-                <img
-                  src="/img/portfolio/portfolio-9.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="portfolio-img-link">
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-plus"></i
-                  ></a>
-                  <a href="" class="portfolio-link-item"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
+              <div
+                class="ih-item square effect3 bottom_to_top portfolio-single-image"
+              >
+                <a href="#">
+                  <div class="img img-fluid">
+                    <img src="/img/portfolio/portfolio-9.jpg" alt="img" />
+                  </div>
+                  <div class="info">
+                    <h3>Heading</h3>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -697,7 +736,11 @@
               Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p>
           </div>
-          <div class="row contact-content wow animate__animated animate__fadeIn">
+          <div
+            class="row contact-content"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div class="col-lg-5 d-flex align-items-stretch mb-3">
               <div class="contact-details">
                 <div class="contact-addres">
@@ -797,15 +840,17 @@
       <i class="bi bi-arrow-up-short"></i>
     </a>
 
-    <script src="./index.js"></script>
+    <script src="./JS/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./JS/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      new WOW().init();
+      AOS.init();
     </script>
+    <script src="JS/particles.js"></script>
+    <script src="JS/app.js"></script>
   </body>
 </html>
