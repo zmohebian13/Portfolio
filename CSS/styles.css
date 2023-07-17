@@ -438,6 +438,8 @@ section {
   background-size: cover;
 }
 
+
+
 .portfolio-header-item:hover,
 .portfolio-header-item.active {
   color: #149ddd;
@@ -446,8 +448,14 @@ section {
 .portfolio-item {
   position: relative;
   margin-bottom: 30px;
-  z-index: 1;
-  transition: 0.3s;
+  transition: opacity 0.5s ease;
+  display: inline;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
 }
 
 .ih-item.square {

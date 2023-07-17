@@ -59,3 +59,70 @@ window.addEventListener("scroll", function () {
     resumeSection.classList.remove("active");
   }
 });
+
+
+const allPortfolioBtn = document.querySelector(".portfolio-all-img");
+const webPortfolioBtn = document.querySelector(".filter-web");
+const appPortfolioBtn = document.querySelector(".filter-app");
+const cardPortfolioBtn = document.querySelector(".filter-card");
+
+const filterAppItem = document.querySelectorAll('.filter-app-item')
+const filterWebItem = document.querySelectorAll('.filter-web-item')
+const filterCardItem = document.querySelectorAll('.filter-card-item')
+console.log(filterAppItem);
+
+const portfolioContent = document.querySelector(".portfolio-content");
+
+webPortfolioBtn.addEventListener('click', function (e){
+  e.preventDefault()
+  filterAppItem[0].classList.add('hidden');
+  filterAppItem[1].classList.add('hidden');
+  filterAppItem[2].classList.add('hidden');
+  filterCardItem[0].classList.add('hidden');
+  filterCardItem[1].classList.add('hidden');
+  filterCardItem[2].classList.add('hidden');
+  console.log(e);
+})
+
+appPortfolioBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  filterWebItem[0].classList.add("hidden");
+  filterWebItem[1].classList.add("hidden");
+  filterWebItem[2].classList.add("hidden");
+  filterCardItem[0].classList.add("hidden");
+  filterCardItem[1].classList.add("hidden");
+  filterCardItem[2].classList.add("hidden");
+  filterAppItem[0].classList.remove("hidden");
+  filterAppItem[1].classList.remove("hidden");
+  filterAppItem[2].classList.remove("hidden");
+  console.log(e);
+});
+
+cardPortfolioBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  filterWebItem[0].classList.add("hidden");
+  filterWebItem[1].classList.add("hidden");
+  filterWebItem[2].classList.add("hidden");
+  filterAppItem[0].classList.add("hidden");
+  filterAppItem[1].classList.add("hidden");
+  filterAppItem[2].classList.add("hidden");
+  filterCardItem[0].classList.remove("hidden");
+  filterCardItem[1].classList.remove("hidden");
+  filterCardItem[2].classList.remove("hidden");
+  console.log(e);
+});
+
+allPortfolioBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  filterWebItem[0].classList.remove("hidden");
+  filterWebItem[1].classList.remove("hidden");
+  filterWebItem[2].classList.remove("hidden");
+  filterAppItem[0].classList.remove("hidden");
+  filterAppItem[1].classList.remove("hidden");
+  filterAppItem[2].classList.remove("hidden");
+  filterCardItem[0].classList.remove("hidden");
+  filterCardItem[1].classList.remove("hidden");
+  filterCardItem[2].classList.remove("hidden");
+  console.log(e);
+});
+
