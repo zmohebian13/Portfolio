@@ -129,7 +129,7 @@ body {
 }
 
 #particles-js {
-  background: url("../img/114253.jpg"); 
+  background: url("../img/114253.jpg");
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   background-position: bottom;
@@ -193,7 +193,6 @@ body {
 
   .hero-title {
     font-size: 40px;
-
   }
 
   .hero-desc {
@@ -651,4 +650,10 @@ section {
 .animate__animated.animate__fadeInLeft,
 .animate__animated.animate__fadeIn {
   --animate-duration: 2s;
+}
+
+.particles-js-canvas-el {
+  position: relative !important;
+  bottom: 242px;
+  height: 100vh;
 }
