@@ -15,3 +15,12 @@ const typeWriter = () => {
 };
 
 typeWriter();
+
+window.addEventListener("scroll", function () {
+  const backToTopBtn = document.querySelector(".back-to-top");
+  if (window.scrollY > 200) {
+    backToTopBtn.classList.add("active");
+  } else {
+    backToTopBtn.classList.remove("active");
+  }
+});
