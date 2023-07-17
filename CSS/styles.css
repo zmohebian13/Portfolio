@@ -617,6 +617,7 @@ section {
 .back-to-top {
   display: none;
   visibility: hidden;
+  opacity: 0;
   position: fixed;
   left: 15px;
   bottom: 15px;
@@ -625,7 +626,7 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .back-to-top i {
@@ -642,6 +643,7 @@ section {
 .active {
   display: block;
   visibility: visible;
+  opacity: 1;
 }
 
 .animate__animated.animate__fadeInUp,
